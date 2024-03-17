@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,15 +7,10 @@
     outline: none;
 }
 
-@font-face {
-    font-family: sanss;
-    src: url(../font/sans.ttf);
-}
-
 body {
     background-color: #111;
     color: #fff;
-    font-family: 'sanss';
+    font-family: 'Poppins', sans-serif;
     transition: all .5s;
 }
 
@@ -22,7 +19,7 @@ button,
 select,
 option,
 textarea {
-    font-family: 'sanss';
+    font-family: 'Poppins', sans-serif;
     word-spacing: 20%;
 }
 
@@ -97,21 +94,6 @@ textarea {
         color: #fff;
     }
 
-    /* #qrcode{
-        width: 200px;
-        border-radius: 5px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .1s;
-    }
-
-    #qrcode img {
-        max-width: 400px;
-        max-height: 400px;
-        margin: 10px auto;
-        border: 1px solid #d1d1d1;
-    } */
-
     #imgBox{
         width: 200px;
         border-radius: 5px;
@@ -155,7 +137,9 @@ textarea {
         display: flex;
         justify-content: center;
         width: 400px;
-        margin: 100px auto;
+        margin: auto;
+        margin-top:100px;
+        
         span {
             position: absolute;
             inset: 0;
@@ -205,11 +189,36 @@ textarea {
         }
     }
     
-
     .output {
-        text-align: center;
-        margin: auto;
-        width: 400px;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: 0px auto 40px;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 10px 10px;
+        border: 1px solid #000;
+        background-color: #333;
+        color: #fff;
+
+        
     }
+    input[type='text'] {
+            width: 370px;
+    }
+
+    /* .span {
+        position: absolute;
+        right: 13px;
+        cursor: pointer;
+        line-height: 53px;
+        color: #707070;
+
+        :hover {
+            color: #fff !important;
+        }
+    } */
+
+
 }
 

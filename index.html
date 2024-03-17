@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR-Code Generator | Scanner</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="shortcut icon" href="./assets/img/qr-code.png" type="image/x-icon">
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
   </head>
   <body>
@@ -20,7 +21,6 @@
                     <input type="text" id="QR_text" placeholder="Text or URL"/>
                     <button>Generate</button>
                 </div>
-                <!-- <div id="qrcode"></div> -->
                 <div id="imgBox">
                     <img src="" id="QR_img">
                 </div>  
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="show"></div>
-                <div class="output"></div>
+                <input type="text" class="output hidden" value="" readonly>
             </div>
         </div>
         
