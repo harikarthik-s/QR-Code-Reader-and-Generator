@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family: sanss;
+    src: url(../font/sans.ttf);
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'sanss';
+}
+
+input,
+button,
+select,
+option,
+textarea {
+    font-family: 'sanss';
+    word-spacing: 20%;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto 0;
+
+    h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.controls {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 4px;
+
+    button {
+        width: 150px;
+        padding: 10px 0;
+        cursor: pointer;
+        background-color: #333;
+        color: #fff;
+        opacity: 0.3;
+        border: none;
+        transition: opacity 0.3s;
+    }
+
+    button.active {
+        opacity: 1;
+    }
+}
+
+.generate{
+    .input {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        margin: 100px auto 40px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    input[type='text'] {
+        width: 370px;
+    }
+
+    button {
+        width: 130px;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    button,
+    input[type='text'] {
+        padding: 10px 5px;
+        border: 1px solid #000;
+        background-color: #333;
+        color: #fff;
+    }
+
+    #qrcode img {
+        margin: auto;
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    a {
+        display: block;
+        width: 120px;
+        padding: 6px;
+        border-radius: 4px;
+        text-align: center;
+        margin: 30px auto;
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        font-size: 14px;
+    }
+
+    a:hover {
+        opacity: 0.8;
+    }
+
+}
+
