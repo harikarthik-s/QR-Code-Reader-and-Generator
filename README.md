@@ -1,7 +1,5 @@
 # QR Code Reader and Generator
 
-![QR Code Reader and Generator](https://harikarthik-s.github.io/QR-Code-Reader-and-Generator/)
-
 This project provides a simple web application for reading and generating QR codes. It's built using HTML, CSS, Vanilla JS, APIs, and Node.js.
 
 ## Features
